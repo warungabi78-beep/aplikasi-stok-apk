@@ -1,21 +1,22 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+package com.saipol.gudang;
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+import android.app.Activity;
+import android.os.Bundle;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
-    <application
-        android:label="Ellis Stok">
+public class MainActivity extends Activity {
 
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
+        WebView webView = new WebView(this);
+        setContentView(webView);
 
-        </activity>
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.setWebViewClient(new WebViewClient());
 
-    </application>
-
-</manifest>
+        webView.loadUrl("https://script.google.com/macros/s/AKfycby8ay2Y7cVJF1C4MAVM7tt_7IOTOxu6NMEfSArb6fr3AdiDeCD4nLCupqKvoyDQu7SS/exec");
+    }
+}

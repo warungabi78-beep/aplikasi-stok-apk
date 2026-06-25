@@ -1,2 +1,2 @@
-rootProject.name = "EllisStok"
+rootProject.name = ".AplikasiStokEllis"
 include ':app'

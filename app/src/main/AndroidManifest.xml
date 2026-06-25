@@ -5,7 +5,7 @@
 
     <application
         android:label="@string/app_name"
-        android:theme="@style/Theme..AplikasiStokEllis">
+        android:theme="@style/Theme.AplikasiStokEllis">
 
         <activity
             android:name=".MainActivity"

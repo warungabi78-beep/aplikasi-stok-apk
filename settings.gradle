@@ -1,2 +1,3 @@
 rootProject.name = "AplikasiStokEllis"
+
 include(":app")

@@ -4,7 +4,7 @@
         <item name="android:windowBackground">@drawable/splash</item>
     </style>
 
-    <style name="Theme.EllisStok">
+    <style name="Theme.AplikasiStokEllis">
         <item name="android:windowBackground">@drawable/splash</item>
     </style>
 
